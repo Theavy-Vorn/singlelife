@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0; /* Add this to reset margins */
+    box-sizing: border-box; /* For consistent sizing */
+}
+.container1{
+    position: relative; /* Ensure positioning for the `top` property */
+    top: 0;
+    width: 30%;
+    height: 100vh;
+    background-color: aqua;
+    margin: auto;
+}
+.photo{
+    width: 100%; /* Ensures the div covers the container */
+    height: 100%; /* Matches the container's height */
+    background-image: url("https://i.pinimg.com/736x/2d/f3/02/2df30230e8453fc5d66eb672cb5d6ea6.jpg");
+    background-size: cover; /* Ensures the image covers the div */
+    background-position: center; 
+}
+.click  {
+    animation: zoomOutEffect 1.5s infinite;
+  }
+  @keyframes zoomOutEffect {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0.7);
+    }
+  }
+.cover{
+    text-align: center;
+    padding: 40px;
+}
+.cover h1{
+    text-align: center;
+}
+.cover a{
+    text-decoration: none;
+}
+/* -------------------------------------------------------------------------------- */
+.container2 {
+    position: relative;
+    width: 30%;
+    height: 100vh;
+    margin: auto;
+    z-index: 1;
+    display: flex;
+    justify-content: center;  
+}
+.star{
+    position: fixed; /* Makes the background image fixed */
+    top: 0;
+    left: 35%;
+    width: 30%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Ensures it stays in the background */
+    margin: auto;
+}
+.star img {
+    animation: zoomOutEffect 1.5s infinite;
+  }
+  @keyframes zoomOutEffect {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0.8);
+    }
+  }
+.star img {
+    animation: zoomOutEffect 1.5s infinite;
+  }
+  @keyframes zoomOutEffect {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0.8);
+    }
+  }
+  .inside  {
+    animation: zoomOutEffect 1.5s infinite;
+  }
+  @keyframes zoomOutEffect {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0.9);
+    }
+  }
+.photo1 {
+    
+    position: fixed; /* Makes the background image fixed */
+    top: 0;
+    left: 35%;
+    width: 30%;
+    height: 100vh;
+    background-image: url("https://render.fineartamerica.com/images/rendered/default/poster/8/8/break/images/artworkimages/medium/3/color-beach-painting-with-palm-trees-using-warm-hues-to-convey-the-beauty-of-sunrise-no-1-andre-petrov.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -2; /* Ensures it stays in the background */
+    margin: auto;
+    
+}
+
+.inside {
+    position: relative; /* Adjusts content within the container */
+    z-index: 1; /* Places content above the background */
+    text-align: center;
+    color: yellow;
+    font-family: Konkhmer Sleokchher;
+    font-weight: bold;
+}
+
+.cover1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside .cover1 img{
+    max-width: 450px;
+    height: auto;
+    padding-left: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: relative;
+    animation-name: photo1;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+}
+@keyframes photo1 {
+    from {left:  170px;}
+    to {left: 0px;}
+    
+  }
+.leaves{
+    margin-right: -60%;
+    z-index: 1;
+    margin-top: -150%;
+}
+.leaves1{
+    margin-left: -450px;
+    margin-top: -48%;
+}
+.leaves2{
+   margin-top: 300px;
+   margin-right: -60%;
+}
+.leaves3{
+   margin-left: -450px;
+   margin-top:-48% ;
+}
+  
+/* ------------------------------------------------------------- */
+.container3 {
+    position: relative;
+    width: 30%;
+    height: 100vh;
+   
+    margin: auto;
+    z-index: 1;
+    display: flex;
+    justify-content: center;  
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+.container3 .butterfly img{
+    position: fixed; /* Makes the background image fixed */
+    top: 0;
+    left: 35%;
+    width: 30%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Ensures it stays in the background */
+    margin: auto;
+}
+.butterfly img {
+    animation: zoomOutEffect 1.5s infinite;
+  }
+  @keyframes zoomOutEffect {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0.9);
+    }
+  }
+.photo2 {
+    
+    position: fixed; /* Makes the background image fixed */
+    top: 0;
+    left: 35%;
+    width: 30%;
+    height: 100vh;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt1YJFwLLTYyAKqYQkdGaSED1BeRPb8xuLZw&s");
+    background-size: cover;
+    background-position: center;
+    z-index: -2; /* Ensures it stays in the background */
+    margin: auto;
+    
+}
+
+.inside2 {
+    position: relative; 
+    z-index: 1; /* Places content above the background */
+    text-align: center;
+  
+}
+p{
+    font-family: Fasthand;
+}
+h4{
+    font-family: Moulpali;
+}
+h5{
+    font-family: Preahvihear;
+}
+
+/* ------------------------swiper-------------------------- */
+swiper-container {
+    width: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 1;
+    margin-left: 37%;
+  }
+
+  swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+   
+
+  }
+
+   swiper-slide img {
+    display: block;
+    width: 100%;
+  }
